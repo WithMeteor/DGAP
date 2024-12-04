@@ -1,4 +1,4 @@
-# PaSIG
+# DGAP
 
 The source code of "Dual Graph Adaptive Propagation for Inductive Text Classification".
 
