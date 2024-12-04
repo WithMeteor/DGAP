@@ -6,43 +6,32 @@ The source code of "Dual Graph Adaptive Propagation for Inductive Text Classific
 
 ```
 .
-├── data
-│     ├── embed_bert
-│     ├── graph
-│     ├── raw
-│     │     ├── mr.labels.txt
-│     │     ├── mr.texts.txt
-│     │     ├── ...
-│     │     ├── R52.labels.txt
-│     │     └── R52.texts.txt
-│     └── temp
-├── log
-├── out
-├── proc
-│     ├── dataset_config.py
-│     ├── encoder_bert.py
-│     ├── graph_builder.py
-│     ├── my_tfidf.py
-│     └── preprocess_data.py
-├── ptm
-│     └── bert-base-uncased
-│         ├── config.json
-│         ├── pytorch_model.bin
-│         ├── tokenizer_config.json
-│         ├── tokenizer.json
-│         └── vocab.txt
-└── src
-    ├── bert_model.py
-    ├── dataset_graph_batch.py
-    ├── dataset_graph.py
-    ├── dataset_text.py
-    ├── gnn_layer.py
-    ├── gnn_model_batch.py
-    ├── gnn_model.py
-    ├── train_bert.py
-    ├── train_gnn_batch.py
-    ├── train_gnn.py
-    └── utils.py
+|-- README.md
+|-- data
+|   |-- graph
+|   |-- raw
+|   |   |-- 20ng.labels.txt
+|   |   |-- 20ng.texts.txt
+|   |   |-- ...
+|   |   |-- ohsumed.labels.txt
+|   |   `-- ohsumed.texts.txt
+|   `-- temp
+|-- log
+|-- proc
+|   |-- constructor.py
+|   |-- filter.py
+|   |-- handle_glove.py
+|   `-- parser.py
+|-- requirements.txt
+|-- source
+|   |-- glove.6B.300d.npy
+|   `-- glove.6B.words.pkl
+`-- src
+    |-- data_config.py
+    |-- dataset.py
+    |-- model.py
+    |-- train.py
+    `-- utils.py
 ```
 
 ## Usage
